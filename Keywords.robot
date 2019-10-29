@@ -1,6 +1,6 @@
 *** Settings ***
 Library	      SeleniumLibrary
-Resource      Arguments.py
+
 
 *** Keywords ***
 test1
@@ -8,7 +8,7 @@ test1
     :FOR    ${value}    IN    @{arguments}
     \    Log To Console	${value}
     \    Run Keyword If    '${value}' == 'test2'     Run Keywords   Log To Console	   testtest
-    \    ...    AND    Log To Console	&{exampleKWArgs}[a]
+         ...    AND    Log To Console	&{exampleKWArgs}[a]
 
 	  Log To Console	&{exampleKWArgs}[a]
 	  Log To Console	&{exampleKWArgs}[b]
