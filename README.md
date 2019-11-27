@@ -12,6 +12,11 @@ Noted: Arguments แบ่งเป็น 4 แบบ positonal, named, vararg, 
 -kwarg คือแบบเดียวกันกบั vararg เพียงแต่จะมาในรูปของ dictionary และไม่สิ้นสุด
 
 # Tags-Robot-Framework
+ส่วนวิธีรัน Robot ที่มี Tag ทำได้ดังนี้
+$ robot -i regression test.robot
+-i หมายถึง include ซึ่งผลลัพธ์ที่ได้ robot จะรันแค่ test case ที่มี tag regression
+$ robot -e regression test.robot
+-e หมายถึง exclude ซึ่งผลลัพธ์ที่ได้ robot จะไม่รัน test case ที่มี tag regression
 Today we will learn:
 ------------------------------
 1. How to run one specific Test from cmd
